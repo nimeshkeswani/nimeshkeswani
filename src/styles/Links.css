@@ -1,0 +1,11 @@
+.Links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Link-icon-image {
+  padding: 5px;
+  height: 50px;
+  width: 50px;
+}
