@@ -9,13 +9,30 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
+  font-size: calc(40px + 2vmin);
+  color: white;
+}
+
+.App-body {
+  background-color: #ffffff;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #282c33;
+}
+
+.App-icon-image {
+  padding: 5px;
+  height: 50px;
+  width: 50px;
 }
 
 .App-link {
