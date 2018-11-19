@@ -12,7 +12,7 @@ class Home extends Component {
 					<Links />
         </header>
 				<body className="Home-body">
-					<Projects />
+						<Projects />
 				</body>
       </Fragment>
 		)

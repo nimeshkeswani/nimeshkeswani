@@ -10,7 +10,7 @@ class Project extends Component {
     const { title, description, githubLink, externalLink } = this.props
 
 		return (
-			<div classNAme='Project'>
+			<div className='Project-main'>
         <h5 className='Project-title'>{title}</h5>
         <p className='Project-description'>{description}</p>
         <div className='Project-links'>
