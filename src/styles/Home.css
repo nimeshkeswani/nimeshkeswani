@@ -1,7 +1,7 @@
 .Home-header {
-  background-color: #c2c2c2;
+  background-color: #282c33;
   flex:1;
-  color: #282c33;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
