@@ -14,10 +14,10 @@ class Project extends Component {
         <h5 className='Project-title'>{title}</h5>
         <p className='Project-description'>{description}</p>
         <div className='Project-links'>
-          <a href={githubLink} target="_blank">
+          <a href={githubLink} target='_blank' rel='noopener noreferrer'>
             <img className='Project-icon-image' src={github} alt='github' />
           </a>
-          <a href={externalLink} target="_blank">
+          <a href={externalLink} target='_blank' rel='noopener noreferrer'>
             <img className='Project-icon-image' src={external} alt='external' />
           </a>
         </div>

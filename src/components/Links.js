@@ -6,12 +6,12 @@ import '../styles/Links.css';
 class Links extends Component {
 	render () {
 		return (
-      <div className="Links">
-        <a href="https://github.com/nimeshkeswani" target="_blank">
-          <img className="Link-icon-image" src={github} alt="github" />
+      <div className='Links'>
+        <a href='https://github.com/nimeshkeswani' target='_blank' rel='noopener noreferrer'>
+          <img className='Link-icon-image' src={github} alt='github' />
         </a>
-        <a href="https://www.linkedin.com/in/nimeshkeswani/" target="_blank">
-          <img className="Link-icon-image" src={linkedin} alt="linkedin" />
+        <a href='https://www.linkedin.com/in/nimeshkeswani/' target='_blank' rel='noopener noreferrer'>
+          <img className='Link-icon-image' src={linkedin} alt='linkedin' />
         </a>
       </div>
 		)
