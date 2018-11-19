@@ -1,0 +1,27 @@
+.Project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Project-title {
+  font-size: 30px;
+  margin: 0px;
+}
+
+.Project-description {
+  font-size: 20px;
+  margin: 0px;
+}
+
+.Project-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Project-icon-image {
+  padding: 5px;
+  height: 25px;
+  width: 25px;
+}
