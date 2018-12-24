@@ -9,14 +9,12 @@ class Home extends Component {
 			<Fragment>
 				<header className='Home-header'>
 					<text>Nimesh Keswani</text>
-					<div className='Home-header-links'>
-						<Links />
-					</div>
         </header>
 				<body className='Home-body'>
 						<Projects />
 				</body>
 				<footer className='Home-footer'>
+					<Links />
 					<text>Nimesh Keswani &copy; 2018</text>
 				</footer>
       </Fragment>
