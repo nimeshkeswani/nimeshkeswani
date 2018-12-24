@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import '../styles/Project.css'
-import github from '../assets/images/github-character.svg'
-import external from '../assets/images/external-link-symbol.svg'
+import github from '../assets/images/github-character.png'
+import external from '../assets/images/external-link-icon.png'
 
 class Project extends Component {
 
