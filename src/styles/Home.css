@@ -5,14 +5,25 @@
 }
 
 .Home-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
   background-color: #282c33;
   color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+}
+
+.Home-header text {
+  float: left;
+  font-size: 32px;
+}
+
+.Home-header-links {
+  float: right;
 }
 
 .Home-body {
+  margin-top: 60px;
   background-color: #ffffff;
   color: #282c33;
   display: flex;

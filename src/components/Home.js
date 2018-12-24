@@ -9,7 +9,9 @@ class Home extends Component {
 			<Fragment>
 				<header className='Home-header'>
 					<text>Nimesh Keswani</text>
-					<Links />
+					<div className='Home-header-links'>
+						<Links />
+					</div>
         </header>
 				<body className='Home-body'>
 						<Projects />
