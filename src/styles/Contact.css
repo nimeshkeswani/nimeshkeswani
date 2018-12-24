@@ -1,0 +1,9 @@
+.form-horizontal {
+  width: 30%;
+  margin: 10px 0;
+}
+
+textarea.form-control {
+  height: 20em;
+  resize: none;
+}

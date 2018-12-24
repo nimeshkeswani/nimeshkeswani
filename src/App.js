@@ -18,7 +18,7 @@ class App extends Component {
             <Navbar>
               <Navbar.Header>
                 <Navbar.Brand>
-                  <Link to='/home'>Nimesh Keswani</Link>
+                  <Link to='/'>Nimesh Keswani</Link>
                 </Navbar.Brand>
               </Navbar.Header>
               <Nav>
@@ -34,7 +34,7 @@ class App extends Component {
               </Nav>
             </Navbar>
             <div className='Home-body'>
-              <Route exact path='/home' component={Home} />
+              <Route exact path='/' component={Home} />
               <Route exact path='/about' component={About} />
               <Route exact path='/projects' component={Projects} />
               <Route exact path='/contact' component={Contact} />

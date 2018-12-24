@@ -11,6 +11,8 @@
   background-color: #282c33;
   color: #ffffff;
   margin-bottom: 0;
+  border-radius: 0;
+  border-color: transparent;
 }
 
 .navbar-default .navbar-brand {
