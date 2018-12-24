@@ -6,7 +6,6 @@
 
 .Home-header {
   background-color: #282c33;
-  flex:1;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -15,7 +14,6 @@
 
 .Home-body {
   background-color: #ffffff;
-  flex: 15;
   color: #282c33;
   display: flex;
   flex-direction: row;
@@ -23,6 +21,10 @@
 }
 
 .Home-footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  padding: 5px;
   background-color: #282c33;
   color: #ffffff;
   font-size: 20px;
