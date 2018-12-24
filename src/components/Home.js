@@ -1,25 +1,11 @@
-import React, { Component, Fragment } from 'react'
-import Links from './Links'
-import '../styles/Home.css'
-import Projects from './Projects'
+import React, { Component } from 'react'
 
 class Home extends Component {
-	render () {
-		return (
-			<Fragment>
-				<header className='Home-header'>
-					<text>Nimesh Keswani</text>
-        </header>
-				<body className='Home-body'>
-						<Projects />
-				</body>
-				<footer className='Home-footer'>
-					<Links />
-					<text>Nimesh Keswani &copy; 2018</text>
-				</footer>
-      </Fragment>
-		)
-	}
+  render () {
+    return (
+      <h1>Home</h1>
+    )
+  }
 }
 
 export default Home

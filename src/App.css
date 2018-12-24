@@ -3,7 +3,66 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /*align-items: stretch;*/
-  /*justify-content: flex-end;*/
-  /*font-size: calc(40px + 2vmin);*/
+}
+
+.navbar-default {
+  background-image: none;
+  padding: 5px;
+  background-color: #282c33;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.navbar-default .navbar-brand {
+  background-color: #282c33;
+  color: #ffffff;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand:visited {
+  background-color: #282c33;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.navbar-default .navbar-nav>li>a {
+  background-color: #282c33;
+  color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:active,
+.navbar-default .navbar-nav>li>a:visited {
+  background-image: none;
+  background-color: #282c33;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:visited,
+.navbar-default .navbar-nav>.open>a {
+  background-image: none;
+  background-color: #282c33;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.Home-body {
+  flex:1;
+  overflow: auto;
+  background-color: #ffffff;
+  color: #282c33;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home-footer {
+  padding: 5px;
+  background-color: #282c33;
+  color: #ffffff;
 }

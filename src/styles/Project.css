@@ -11,12 +11,12 @@
 }
 
 .Project-title {
-  font-size: 30px;
+  font-size: 24px;
   margin: 0px;
 }
 
 .Project-description {
-  font-size: 20px;
+  font-size: 16px;
   margin: 0px;
 }
 
@@ -28,8 +28,8 @@
 
 .Project-icon-image {
   padding: 5px;
-  height: 35px;
-  width: 35px;
+  height: 30px;
+  width: 30px;
 }
 
 .Project-icon-image:hover {

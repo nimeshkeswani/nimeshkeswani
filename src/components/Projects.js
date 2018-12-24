@@ -5,7 +5,7 @@ import Project from './Project'
 class Projects extends Component {
 	render () {
 		return (
-			<div classNAme='Projects'>
+			<div className='Projects'>
         <Project
           title='Would You Rather?'
           description='A Would You Rather App using React & Redux'
