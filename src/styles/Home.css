@@ -1,3 +1,9 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
 .Home-header {
   background-color: #282c33;
   flex:1;
@@ -14,4 +20,10 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.Home-footer {
+  background-color: #282c33;
+  color: #ffffff;
+  font-size: 20px;
 }

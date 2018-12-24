@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import github from '../assets/images/github-sign-white.svg'
-import linkedin from '../assets/images/linkedin-sign-white.svg'
-import '../styles/Links.css';
+import github from '../assets/images/github-sign-white.png'
+import linkedin from '../assets/images/linkedin-sign-white.png'
+import '../styles/Links.css'
 
 class Links extends Component {
 	render () {

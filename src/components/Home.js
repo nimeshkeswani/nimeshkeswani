@@ -7,13 +7,16 @@ class Home extends Component {
 	render () {
 		return (
 			<Fragment>
-				<header className="Home-header">
+				<header className='Home-header'>
 					<text>Nimesh Keswani</text>
 					<Links />
         </header>
-				<body className="Home-body">
+				<body className='Home-body'>
 						<Projects />
 				</body>
+				<footer className='Home-footer'>
+					<text>Nimesh Keswani &copy; 2018</text>
+				</footer>
       </Fragment>
 		)
 	}
