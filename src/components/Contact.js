@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Form, FormGroup, FormControl, Button } from 'react-bootstrap'
+import { Form, FormGroup, FormControl, Button, Modal } from 'react-bootstrap'
 import '../styles/Contact.css'
 import { Redirect } from 'react-router-dom'
 
@@ -12,6 +12,9 @@ class Contact extends Component {
     this.handleEmailChange = this.handleEmailChange.bind(this)
     this.handleMessageChange = this.handleMessageChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
+
+    this.handleShow = this.handleShow.bind(this)
+    this.handleClose = this.handleClose.bind(this)
 
     this.state = {
       name: {
@@ -26,7 +29,8 @@ class Contact extends Component {
         value: '',
         validationState: null
       },
-      redirect: false
+      redirect: false,
+      showModal: false
     }
   }
 
@@ -86,12 +90,21 @@ class Contact extends Component {
     this.setState({ message: { value: e.target.value } })
   }
 
+  handleClose () {
+    this.setState({ showModal: false })
+  }
+
+  handleShow () {
+    this.setState({ showModal: true })
+  }
+
   async handleSubmit (e) {
     e.preventDefault()
     await this.validateForm()
     if (!this.isFormValid()) {
     } else {
-      this.setState({ redirect: true })
+      // this.setState({ redirect: true })
+      this.handleShow()
     }
   }
 
@@ -138,6 +151,17 @@ class Contact extends Component {
         </FormGroup>
         <Button type='submit' onClick={this.handleSubmit}>Submit</Button>
       </Form>
+        <Modal show={this.state.showModal} onHide={this.handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Sorry!</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <h4>This feature is in the works. To contact, please email directly to nimeshkeswani@hotmail.com</h4>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button onClick={this.handleClose}>Close</Button>
+          </Modal.Footer>
+        </Modal>
       </div>
     )
   }
