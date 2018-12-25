@@ -1,5 +1,5 @@
 .Contact-main {
-  width: 30%;
+  width: 40%;
   margin: 10px 0;
   border-width: 1px;
   border-color: #a37f5c;
@@ -12,4 +12,10 @@
 textarea.form-control {
   height: 20em;
   resize: none;
+}
+
+@media(max-width: 800px) {
+  .Contact-main {
+    width: 80%;
+  }
 }
