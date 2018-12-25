@@ -98,6 +98,7 @@ class Contact extends Component {
   render () {
     if (this.state.redirect) return <Redirect to='/' />
     return (
+      <div className='Contact-main'>
       <Form horizontal>
         <FormGroup
           controlId='formContactName'
@@ -137,6 +138,7 @@ class Contact extends Component {
         </FormGroup>
         <Button type='submit' onClick={this.handleSubmit}>Submit</Button>
       </Form>
+      </div>
     )
   }
 }

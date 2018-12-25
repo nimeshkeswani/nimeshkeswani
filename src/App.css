@@ -13,43 +13,49 @@
   margin-bottom: 0;
   border-radius: 0;
   border-color: transparent;
+  border-bottom: #a37f5c solid 4px;
 }
 
-.navbar-default .navbar-brand {
-  background-color: #282c33;
-  color: #ffffff;
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:link,
+.navbar-default .navbar-brand:visited {
+  color: #f3c765;
 }
 
 .navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:active,
-.navbar-default .navbar-brand:visited {
-  background-color: #282c33;
-  color: #ffffff;
-  opacity: 0.5;
+.navbar-default .navbar-brand:active  {
+  color: #a37f5c;
 }
 
-.navbar-default .navbar-nav>li>a {
-  background-color: #282c33;
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:link,
+.navbar-default .navbar-nav>li>a:visited {
   color: #ffffff;
 }
 
 .navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:active,
-.navbar-default .navbar-nav>li>a:visited {
-  background-image: none;
-  background-color: #282c33;
-  color: #ffffff;
-  opacity: 0.5;
+.navbar-default .navbar-nav>li>a:active {
+  color: #a37f5c;
 }
 
 .navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:visited,
-.navbar-default .navbar-nav>.open>a {
+.navbar-default .navbar-nav>.active>a:visited {
   background-image: none;
   background-color: #282c33;
-  color: #ffffff;
-  opacity: 0.5;
+  color: #f3c765;
+}
+
+.navbar-default .navbar-nav>.active>a:link {
+  background-image: none;
+  background-color: #282c33;
+  color: #f3c765;
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:active {
+  background-image: none;
+  background-color: #282c33;
+  color: #f3c765;
 }
 
 .Home-body {
@@ -68,3 +74,9 @@
   background-color: #282c33;
   color: #ffffff;
 }
+
+/*
+#212121 // Ebony Clay
+#e5e6ea // Mercury
+#828592 // Olso Gray
+*/

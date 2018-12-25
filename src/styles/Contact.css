@@ -1,6 +1,12 @@
-.form-horizontal {
+.Contact-main {
   width: 30%;
   margin: 10px 0;
+  border-width: 1px;
+  border-color: #a37f5c;
+  border-radius: 10px;
+  border-style: solid;
+  padding: 30px;
+  margin: 20px;
 }
 
 textarea.form-control {
