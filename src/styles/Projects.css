@@ -1,5 +1,28 @@
 .Projects {
   display: flex;
+  width: 80vw;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.ProjectsCategory {
+  max-width: 30vw;
+  margin: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  width: 100%;
+  flex: 1;
+  display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media(max-width: 800px) {
+  .Projects {
+    flex-direction: column;
+  }
+  .ProjectsCategory {
+    max-width: 70vw;
+  }
 }

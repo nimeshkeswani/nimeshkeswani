@@ -6,6 +6,8 @@ class Projects extends Component {
 	render () {
 		return (
 			<div className='Projects'>
+        <div className='ProjectsCategory'>
+        <h3>Frontend</h3>
         <Project
           title='Would You Rather?'
           description='A Would You Rather App using React & Redux'
@@ -16,6 +18,14 @@ class Projects extends Component {
           description='A Book Tracking App using React'
           githubLink='https://github.com/nimeshkeswani/my-reads'
           externalLink='https://nimeshkeswani.github.io/my-reads' />
+        </div>
+        <div className='ProjectsCategory'>
+        <h3>Backend</h3>
+        <Project
+          title='Backend Server'
+          description='A Backend Server using Node.js'
+          githubLink='https://github.com/nimeshkeswani/nimesh-server' />
+        </div>
       </div>
 		)
 	}
