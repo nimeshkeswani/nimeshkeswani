@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Form, FormGroup, FormControl, Button, Modal } from 'react-bootstrap'
 import '../styles/Contact.css'
 import { Redirect } from 'react-router-dom'
+import axios from 'axios'
 
 class Contact extends Component {
 
@@ -30,7 +31,9 @@ class Contact extends Component {
         validationState: null
       },
       redirect: false,
-      showModal: false
+      showModal: false,
+      modalTitle: '',
+      modalMessage: ''
     }
   }
 
@@ -91,6 +94,7 @@ class Contact extends Component {
   }
 
   handleClose () {
+    this.setState({ redirect: true })
     this.setState({ showModal: false })
   }
 
@@ -98,12 +102,29 @@ class Contact extends Component {
     this.setState({ showModal: true })
   }
 
+  async sendEmail() {
+    try {
+      await axios.post('https://kvxg9expe2.execute-api.us-east-1.amazonaws.com/Prod/send', {
+        'toEmails': ['nimeshkeswani@hotmail.com', 'keswanimesh@gmail.com'],
+        'subject': `${this.state.name.value} wants to contact you`,
+        'message': `Contact Email: ${this.state.email.value}
+
+Message:
+
+${this.state.message.value}`
+      })
+      this.setState({ modalTitle: 'Thank You!', modalMessage: 'Thanks for contacting.' })
+    } catch (err) {
+      this.setState({ modalTitle: 'Sorry!', modalMessage: 'Something went wrong. Please email directly to nimeshkeswani@hotmail.com.' })
+    }
+  }
+
   async handleSubmit (e) {
     e.preventDefault()
     await this.validateForm()
     if (!this.isFormValid()) {
     } else {
-      // this.setState({ redirect: true })
+      await this.sendEmail()
       this.handleShow()
     }
   }
@@ -153,10 +174,10 @@ class Contact extends Component {
       </Form>
         <Modal show={this.state.showModal} onHide={this.handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>Sorry!</Modal.Title>
+            <Modal.Title>{this.state.modalTitle}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <h4>This feature is in the works. To contact, please email directly to nimeshkeswani@hotmail.com</h4>
+            <h4>{this.state.modalMessage}</h4>
           </Modal.Body>
           <Modal.Footer>
             <Button onClick={this.handleClose}>Close</Button>
