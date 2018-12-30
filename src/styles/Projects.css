@@ -2,13 +2,13 @@
   display: flex;
   width: 80vw;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: flex-start;
 }
 
 .ProjectsCategory {
+  min-width: 30vw;
   max-width: 30vw;
-  margin: 10px;
   border: 1px solid #a37f5c;
   border-radius: 10px;
   width: 100%;
@@ -27,8 +27,10 @@
 @media(max-width: 800px) {
   .Projects {
     flex-direction: column;
+    justify-content: space-evenly;
   }
   .ProjectsCategory {
-    max-width: 70vw;
+    min-width: 80vw;
+    max-width: 80vw;
   }
 }
