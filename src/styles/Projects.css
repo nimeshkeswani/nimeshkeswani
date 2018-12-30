@@ -1,21 +1,19 @@
 .Projects {
   display: flex;
-  width: 80vw;
+  width: 80%;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-start;
 }
 
 .ProjectsCategory {
-  min-width: 30vw;
-  max-width: 30vw;
   border: 1px solid #a37f5c;
   border-radius: 10px;
-  width: 100%;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 20px;
 }
 
 .LoadingSymbol {
@@ -28,9 +26,10 @@
   .Projects {
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
   }
   .ProjectsCategory {
-    min-width: 80vw;
-    max-width: 80vw;
+    width: 100%;
   }
 }

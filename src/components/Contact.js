@@ -133,6 +133,8 @@ ${this.state.message.value}`
     if (this.state.redirect) return <Redirect to='/' />
     return (
       <div className='Contact-main'>
+      <p>Get In Touch</p>
+      <div className='Contact-form'>
       <Form horizontal>
         <FormGroup
           controlId='formContactName'
@@ -183,6 +185,7 @@ ${this.state.message.value}`
             <Button onClick={this.handleClose}>Close</Button>
           </Modal.Footer>
         </Modal>
+      </div>
       </div>
     )
   }
