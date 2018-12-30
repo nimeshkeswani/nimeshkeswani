@@ -18,8 +18,8 @@
 
 .LoadingSymbol {
   padding: 10px;
-  height: 20vw;
-  width: 20vw;
+  height: 100px;
+  width: 100px;
 }
 
 @media(max-width: 800px) {

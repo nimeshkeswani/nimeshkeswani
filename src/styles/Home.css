@@ -1,0 +1,30 @@
+.home-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture {
+  border: 4px solid #a37f5c;
+  border-radius: 50%;
+  height: 50vw;
+  width: 50vw;
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.details {
+  padding: 20px;
+  font-size: 1.7em;
+}
+
+.details hr {
+  border-top: 2px solid #a37f5c;
+}
+
+@media(max-width: 800px) {
+  .details {
+    font-size: 1.4em;
+  }
+}

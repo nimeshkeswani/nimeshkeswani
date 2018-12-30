@@ -25,7 +25,7 @@ class Projects extends Component {
 
     if (loading) {
       return (
-        <img class='LoadingSymbol' src={loadingSymbol} alt='loading' />
+        <img className='LoadingSymbol' src={loadingSymbol} alt='loading' />
       )
     }
 
