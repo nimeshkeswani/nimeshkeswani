@@ -18,6 +18,12 @@
   justify-content: center;
 }
 
+.LoadingSymbol {
+  padding: 10px;
+  height: 20vw;
+  width: 20vw;
+}
+
 @media(max-width: 800px) {
   .Projects {
     flex-direction: column;

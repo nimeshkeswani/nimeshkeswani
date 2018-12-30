@@ -2,21 +2,33 @@ import React, { Component } from 'react'
 import '../styles/Projects.css'
 import Project from './Project'
 import axios from 'axios'
+import loadingSymbol from '../assets/images/loading-symbol.gif'
 
 class Projects extends Component {
 
   state = {
     frontendRepos: [],
-    backendRepos: []
+    backendRepos: [],
+    loading: false
   }
 
   async componentDidMount () {
+    this.setState({ loading: true })
     const repos = await axios.get('https://api.github.com/users/nimeshkeswani/repos')
     this.setState({ frontendRepos: repos.data.filter(repo => ['mobile-flashcards', 'nimeshkeswani.github.io', 'my-reads', 'would-you-rather'].includes(repo.name)) })
     this.setState({ backendRepos: repos.data.filter(repo => ['nimesh-server'].includes(repo.name)) })
+    this.setState({ loading: false })
   }
 
   render () {
+    const { loading } = this.state
+
+    if (loading) {
+      return (
+        <img class='LoadingSymbol' src={loadingSymbol} alt='loading' />
+      )
+    }
+
     return (
       <div className='Projects'>
         <div className='ProjectsCategory'>
